@@ -29,21 +29,20 @@ public class LibraryTest {
 
     @BeforeClass
     public static void setup(){
-        //TODO instantiate the library and the repository
+    	// instance of the library
     	library = new LibraryImp();
-        //TODO add some test books (use BookRepository#addBooks)
-    
-
-    	
+    	// instances of examples books
     	  bookHarry = new Book("Harry Potter", "J.K. Rowling",new ISBN (Long.parseLong("46578964513")));
     	  bookAround = new Book( "Around the world in 80 days", "Jules Verne",new ISBN (Long.parseLong("3326456467846")));
     	  bookPeau = new Book( "La peau de chagrin","Balzac",new ISBN(Long.parseLong("968787565445")));
     	  bookCatch = new Book( "Catch 22", "Joseph Heller",new ISBN(Long.parseLong("465789453149"))); 
-    	     booksTest.add(bookCatch);
-    		 booksTest.add(bookPeau);
-    		 booksTest.add(bookAround);
-    		 booksTest.add(bookHarry);
-    		 BookRepository.addBooks(booksTest);
+    	//adding books in the addlist
+    	  booksTest.add(bookCatch);
+    	  booksTest.add(bookPeau);
+    	  booksTest.add(bookAround);
+    	  booksTest.add(bookHarry);
+    	 //adding books to available books
+    	 BookRepository.addBooks(booksTest);
     		   
     }
 

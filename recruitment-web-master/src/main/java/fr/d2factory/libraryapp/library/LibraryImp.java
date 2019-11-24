@@ -51,6 +51,11 @@ public class LibraryImp implements ILibrary{
 	  numberOfDays = year * 360 + month * 30 + day;
 	return numberOfDays;
 }
+    /**
+     * check if the member is late or not
+     *
+     * @param the book which we should compute the number of days
+     */  
 public Boolean isLate(Member member) {
 	int maxDays=60;
 	List<Book> books = member.getBooks();
